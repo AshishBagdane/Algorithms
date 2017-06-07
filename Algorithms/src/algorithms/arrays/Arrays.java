@@ -2,24 +2,24 @@ package algorithms.arrays;
 
 public class Arrays {
 
-	public static void print(int[] arr) {
-		for (int element : arr) {
+	public static <E> void print(E[] arr) {
+		for (E element : arr) {
 			System.out.print(element + " ");
 		}
 		System.out.println();
 	}
 	
-	public static void printReverse(int[] arr) {
+	public static <E> void printReverse(E[] arr) {
 		for (int i = arr.length - 1; i >= 0; i--) {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println();
 	}
 	
-	public static void reverse(int[] arr) {
+	public static <E> void reverse(E[] arr) {
 		int length = arr.length - 1;
 		for (int i = 0; i <= Math.floorDiv(length, 2); i++) {
-			int temp = arr[i];
+			E temp = arr[i];
 			arr[i] = arr[length - i];
 			arr[length - i] = temp;
 		}
@@ -43,5 +43,13 @@ public class Arrays {
 			}
 		}
 		return min;
+	}
+	
+	public static long sum(int[] arr) {
+		long sum = 0;
+		for (int element : arr) {
+			sum += element;
+		}
+		return sum;
 	}
 }
