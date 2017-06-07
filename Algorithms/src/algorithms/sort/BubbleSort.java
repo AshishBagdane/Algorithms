@@ -79,7 +79,7 @@ public class BubbleSort {
 			for (Integer j = i + 1; j < arr.length; j++) {
 				if (arr[i].compareTo(arr[j]) > 0) {
 					String temp = arr[j];
-					arr[j] = arr[i];
+					arr[j] = arr[i]; 
 					arr[i] = temp;
 				}
 			}
