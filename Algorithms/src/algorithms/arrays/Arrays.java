@@ -1,5 +1,7 @@
 package algorithms.arrays;
 
+import java.math.BigInteger;
+
 public class Arrays {
 
 	public static <E> void print(E[] arr) {
@@ -85,10 +87,26 @@ public class Arrays {
 		return min;
 	}
 	
-	public static Long sum(Long[] arr) {
+	public static Long sum(Integer[] arr) {
 		Long sum = 0L;
-		for (Long element : arr) {
+		for (Integer element : arr) {
 			sum += element;
+		}
+		return sum;
+	}
+	
+	public static BigInteger sum(Long[] arr) {
+		BigInteger sum = BigInteger.ZERO;
+		for (Long element : arr) {
+			sum = sum.add(new BigInteger(String.valueOf(element)));
+		}
+		return sum;
+	}
+	
+	public static BigInteger sum(BigInteger[] arr) {
+		BigInteger sum = BigInteger.ZERO;
+		for (BigInteger element : arr) {
+			sum = sum.add(new BigInteger(String.valueOf(element)));
 		}
 		return sum;
 	}
