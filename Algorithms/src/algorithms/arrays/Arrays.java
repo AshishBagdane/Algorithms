@@ -110,4 +110,44 @@ public class Arrays {
 		}
 		return sum;
 	}
+	
+	public static Integer[] copyOf(Integer[] arr) {
+		Integer[] copy = new Integer[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+		return copy;
+	}
+	
+	public static Long[] copyOf(Long[] arr) {
+		Long[] copy = new Long[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+		return copy;
+	}
+	
+	public static Float[] copyOf(Float[] arr) {
+		Float[] copy = new Float[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+		return copy;
+	}
+	
+	public static Double[] copyOf(Double[] arr) {
+		Double[] copy = new Double[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+		return copy;
+	}
+	
+	public static String[] copyOf(String[] arr) {
+		String[] copy = new String[arr.length];
+		for (int i = 0; i < arr.length; i++) {
+			copy[i] = arr[i];
+		}
+		return copy;
+	}
 }
