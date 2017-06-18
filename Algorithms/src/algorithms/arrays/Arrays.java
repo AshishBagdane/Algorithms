@@ -11,6 +11,13 @@ public class Arrays {
 		System.out.println();
 	}
 	
+	public static <E> void print(E[] arr, int from, int to) {
+		for (int i = from; i <= to; i++) {
+			System.out.print(arr[i].toString() + " ");
+		}
+		System.out.println();
+	}
+	
 	public static <E> void printReverse(E[] arr) {
 		for (int i = arr.length - 1; i >= 0; i--) {
 			System.out.print(arr[i].toString() + " ");
