@@ -71,7 +71,7 @@ public class BinarySearch {
 		Integer high = arr.length - 1;
 		while (low <= high) {
 			Integer mid = (low + high) / 2;
-			if (arr[mid] == key) {
+			if (arr[mid].equals(key)) {
 				return mid;
 			} else if (arr[mid].compareTo(key) < 0) {
 				low = mid + 1;
