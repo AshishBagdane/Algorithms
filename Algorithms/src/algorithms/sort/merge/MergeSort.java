@@ -1,4 +1,4 @@
-package algorithms.sort;
+package algorithms.sort.merge;
 
 import algorithms.arrays.Arrays;
 

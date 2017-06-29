@@ -1,4 +1,4 @@
-package algorithms.sort;
+package algorithms.sort.counting;
 
 import algorithms.arrays.Arrays;
 
